@@ -216,15 +216,10 @@ weekdays_steps_interval<-summarise(weekdays_data_interval,
 avg_interval=mean(steps))
 
 #creating the plot.
-P<-qplot(interval,avg_interval,data=weekdays_steps_interval,geom="path",facets=.~weekdays,colour=weekdays)
-print(P)
+qplot(interval,avg_interval,data=weekdays_steps_interval,geom="path",facets=.~weekdays,colour=weekdays)
 ```
 
 ![plot of chunk Weekdays](figure/Weekdays-1.png) 
-
-```r
-Figure.4<-P
-```
 
 
 
